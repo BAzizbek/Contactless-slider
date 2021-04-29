@@ -1,4 +1,4 @@
-// window.saveDataAcrossSessions = true
+window.saveDataAcrossSessions = true
 
 const LOOK_TIME = 1000
 const LEFT_SIDE = window.innerWidth / 4
@@ -43,7 +43,7 @@ webgazer.setGazeListener((data, timestamp) => {
   }
 }).begin()
 
-// webgazer.showVideoPreview(false).showPredictionPoints(false)
+webgazer.showVideoPreview(false).showPredictionPoints(false)
 
 function getNewImage(next = false) {
   const img = document.createElement('img')
